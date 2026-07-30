@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convocatoria — Asesores Comerciales</title>
+<style>
+  :root{
+    --navy:#0B2545;
+    --navy-deep:#081A33;
+    --red:#E63946;
+    --red-deep:#C7303C;
+    --paper:#F5F6F8;
+    --ink:#1B1F27;
+    --muted:#5B6472;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    max-width:640px;
+    margin:0 auto;
+    padding:0 20px 60px;
+  }
+  .topband{
+    background:var(--navy);
+    padding:28px 20px 90px;
+    position:relative;
+    overflow:hidden;
+  }
+  .topband::after{
+    content:"";
+    position:absolute;
+    right:-60px;
+    top:-60px;
+    width:220px;
+    height:220px;
+    background:var(--red);
+    opacity:.15;
+    border-radius:50%;
+  }
+  .eyebrow{
+    display:inline-block;
+    background:var(--red);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    padding:6px 14px;
+    border-radius:100px;
+    margin-bottom:18px;
+  }
+  h1{
+    color:#fff;
+    font-size:30px;
+    line-height:1.2;
+    font-weight:800;
+    margin:0 0 10px;
+    max-width:520px;
+  }
+  .lead{
+    color:#C9D4E3;
+    font-size:15.5px;
+    line-height:1.55;
+    max-width:480px;
+    margin:0;
+  }
+  .video-card{
+    background:#000;
+    border-radius:16px;
+    margin:-64px 0 28px;
+    box-shadow:0 20px 40px -18px rgba(8,26,51,.45);
+    overflow:hidden;
+    aspect-ratio:16/9;
+  }
+  .video-card video, .video-card iframe{
+    width:100%;
+    height:100%;
+    display:block;
+    border:0;
+  }
+  .section-title{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--red);
+    margin:0 0 14px;
+  }
+  .profile-list{
+    list-style:none;
+    margin:0 0 32px;
+    padding:0;
+    display:grid;
+    gap:12px;
+  }
+  .profile-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    background:#fff;
+    border:1px solid #E7EAEF;
+    border-radius:12px;
+    padding:14px 16px;
+    font-size:15px;
+    line-height:1.4;
+  }
+  .profile-list li .mark{
+    flex:0 0 22px;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--navy);
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1px;
+  }
+  .callout{
+    background:var(--navy);
+    color:#fff;
+    border-radius:14px;
+    padding:20px 20px;
+    font-size:14.5px;
+    line-height:1.5;
+    margin-bottom:32px;
+  }
+  .callout strong{color:#fff;}
+  .cta{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--red);
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    padding:18px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    box-shadow:0 12px 24px -10px rgba(230,57,70,.55);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover{transform:translateY(-2px); box-shadow:0 16px 28px -10px rgba(230,57,70,.6);}
+  .cta:active{transform:translateY(0);}
+  .fineprint{
+    text-align:center;
+    color:var(--muted);
+    font-size:12.5px;
+    margin-top:14px;
+  }
+  @media (max-width:480px){
+    h1{font-size:25px;}
+    .topband{padding:24px 16px 80px;}
+    .video-card{margin-top:-56px;}
+  }
+</style>
+</head>
+<body>
+
+  <div class="topband">
+    <span class="eyebrow">Convocatoria</span>
+    <h1>¿Tienes lo que se necesita para vender?</h1>
+    <p class="lead">Estamos formando un equipo comercial. Antes de continuar, mira este video de 90 segundos.</p>
+  </div>
+
+  <div class="wrap">
+    <div class="video-card">
+      <!-- Reemplaza el src por el link real del video (YouTube, Vimeo o archivo .mp4) -->
+      <iframe src="" title="Video de presentación" allowfullscreen></iframe>
+    </div>
+
+    <p class="section-title">¿A quién buscamos?</p>
+    <ul class="profile-list">
+      <li><span class="mark">✓</span> Gente con ganas reales de aprender y avanzar, tenga o no experiencia previa</li>
+      <li><span class="mark">✓</span> Compromiso serio: buscamos a alguien que se quede a construir, no que pruebe un mes y se vaya</li>
+      <li><span class="mark">✓</span> Actitud proactiva para generar y gestionar tus propios contactos</li>
+      <li><span class="mark">✓</span> Disciplina y constancia para seguir un ritmo de trabajo diario</li>
+      <li><span class="mark">✓</span> 100% comisión, sin techo de ganancias: aquí tu ingreso lo defines tú, mientras más vendes, más ganas</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Así funciona:</strong> tu ingreso es 100% comisión, sin límite. Te formamos desde cero — mientras más vendes, más ganas, no hay techo.
+    </div>
+
+    <a class="cta" href="pagina2.html">Continuar postulación →</a>
+    <p class="fineprint">Solo toma un minuto ver la siguiente parte.</p>
+  </div>
+
+</body>
+</html>
