@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,"script",
+"https://connect.facebook.net/en_US/fbevents.js");
+fbq("init", "1367454361538331");
+fbq("track", "PageView");
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1367454361538331&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Convocatoria — Asesores Comerciales</title>
+<style>
+  :root{
+    --navy:#0B2545;
+    --red:#E63946;
+    --paper:#F5F6F8;
+    --ink:#1B1F27;
+    --muted:#5B6472;
+    --green:#1E8E5A;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    color:var(--ink);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 20px 60px;}
+  .topband{
+    background:var(--navy);
+    padding:32px 20px 36px;
+    position:relative;
+    overflow:hidden;
+  }
+  .topband::after{
+    content:"";
+    position:absolute;
+    right:-60px;
+    top:-60px;
+    width:220px;
+    height:220px;
+    background:var(--red);
+    opacity:.15;
+    border-radius:50%;
+  }
+  .eyebrow{
+    display:inline-block;
+    background:var(--red);
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    padding:6px 14px;
+    border-radius:100px;
+    margin-bottom:18px;
+  }
+  h1{
+    color:#fff;
+    font-size:28px;
+    line-height:1.2;
+    font-weight:800;
+    margin:0 0 10px;
+  }
+  .lead{
+    color:#C9D4E3;
+    font-size:15px;
+    line-height:1.55;
+    margin:0;
+  }
+
+  .section-title{
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--red);
+    margin:32px 0 14px;
+  }
+  .section-title:first-of-type{margin-top:26px;}
+
+  .profile-list{
+    list-style:none;
+    margin:0 0 8px;
+    padding:0;
+    display:grid;
+    gap:12px;
+  }
+  .profile-list li{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+    background:#fff;
+    border:1px solid #E7EAEF;
+    border-radius:12px;
+    padding:14px 16px;
+    font-size:15px;
+    line-height:1.4;
+  }
+  .profile-list li .mark{
+    flex:0 0 22px;
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:var(--navy);
+    color:#fff;
+    font-size:13px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:1px;
+  }
+
+  .callout{
+    background:var(--navy);
+    color:#fff;
+    border-radius:14px;
+    padding:20px;
+    font-size:14.5px;
+    line-height:1.5;
+    margin-top:22px;
+  }
+
+  .company-grid{display:grid; gap:12px; margin-top:6px;}
+  .company-card{
+    background:#fff;
+    border:1px solid #E7EAEF;
+    border-radius:12px;
+    padding:16px;
+  }
+  .company-card h3{margin:0 0 6px; font-size:15px; color:var(--navy);}
+  .company-card p{margin:0; font-size:14px; color:var(--muted); line-height:1.5;}
+
+  /* Autoevaluacion */
+  .quiz{
+    background:#fff;
+    border:1px solid #E7EAEF;
+    border-radius:14px;
+    padding:20px;
+    margin-top:6px;
+  }
+  .quiz p.q-intro{
+    font-size:13.5px;
+    color:var(--muted);
+    margin:0 0 18px;
+    line-height:1.5;
+  }
+  .q{
+    margin-bottom:20px;
+  }
+  .q:last-of-type{margin-bottom:6px;}
+  .q .q-text{
+    font-size:15px;
+    font-weight:700;
+    color:var(--navy);
+    margin:0 0 10px;
+  }
+  .q .opts{
+    display:flex;
+    gap:10px;
+  }
+  .q .opts label{
+    flex:1;
+    text-align:center;
+    border:1.5px solid #E7EAEF;
+    border-radius:10px;
+    padding:11px;
+    font-size:14px;
+    font-weight:600;
+    color:var(--navy);
+    cursor:pointer;
+    transition:all .15s ease;
+    user-select:none;
+  }
+  .q .opts input{display:none;}
+  .q .opts input:checked + label{
+    background:var(--navy);
+    color:#fff;
+    border-color:var(--navy);
+  }
+
+  .result{
+    display:none;
+    margin-top:18px;
+    border-radius:12px;
+    padding:18px 20px;
+    font-size:14.5px;
+    line-height:1.5;
+  }
+  .result.show{display:block;}
+  .result.positive{background:#EAF7F0; border:1px solid #BFE6D0; color:#155C3B;}
+  .result.negative{background:#FBEAEC; border:1px solid #F1C2C8; color:#8A222B;}
+
+  .cta{
+    display:block;
+    width:100%;
+    text-align:center;
+    background:var(--red);
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+    padding:18px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    box-shadow:0 12px 24px -10px rgba(230,57,70,.55);
+    margin-top:14px;
+    opacity:.4;
+    pointer-events:none;
+    transition:opacity .2s ease;
+  }
+  .cta.enabled{opacity:1; pointer-events:auto;}
+
+  .fineprint{
+    text-align:center;
+    color:var(--muted);
+    font-size:12.5px;
+    margin-top:14px;
+  }
+
+  /* Boton disparador - fijo y llamativo */
+  .start-btn-spacer{ height:88px; }
+  .start-btn{
+    position:fixed;
+    left:16px;
+    right:16px;
+    bottom:16px;
+    max-width:608px;
+    margin:0 auto;
+    text-align:center;
+    background:linear-gradient(135deg, #FF7A3D, var(--red));
+    color:#fff;
+    font-size:18px;
+    font-weight:800;
+    padding:19px 20px;
+    border-radius:14px;
+    border:none;
+    cursor:pointer;
+    box-shadow:0 14px 30px -8px rgba(230,57,70,.55);
+    z-index:400;
+    animation:pulseAttn 2.2s ease-in-out infinite;
+  }
+  @keyframes pulseAttn{
+    0%, 100%{transform:scale(1);}
+    50%{transform:scale(1.035);}
+  }
+
+  /* Modal */
+  .modal-overlay{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(11,37,69,.6);
+    z-index:1000;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+  }
+  .modal-overlay.show{display:flex;}
+  .modal-card{
+    background:#fff;
+    width:100%;
+    max-width:480px;
+    border-radius:20px;
+    padding:26px 24px 28px;
+    box-sizing:border-box;
+    animation:popIn .22s ease;
+    max-height:85vh;
+    overflow-y:auto;
+  }
+  @keyframes popIn{
+    from{transform:scale(.94); opacity:0;}
+    to{transform:scale(1); opacity:1;}
+  }
+  .modal-close{
+    display:block;
+    margin-left:auto;
+    background:none;
+    border:none;
+    font-size:22px;
+    color:var(--muted);
+    cursor:pointer;
+    line-height:1;
+    padding:4px;
+  }
+  .progress-dots{
+    display:flex;
+    gap:6px;
+    margin:6px 0 24px;
+  }
+  .progress-dots span{
+    flex:1;
+    height:4px;
+    border-radius:100px;
+    background:#E7EAEF;
+    transition:background .2s ease;
+  }
+  .progress-dots span.done{background:var(--navy);}
+
+  .step{display:none;}
+  .step.active{display:block;}
+  .step-label{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--red);
+    margin:0 0 10px;
+  }
+  .step-question{
+    font-size:19px;
+    font-weight:800;
+    color:var(--navy);
+    line-height:1.35;
+    margin:0 0 26px;
+  }
+  .step input[type="text"]{
+    width:100%;
+    padding:14px 16px;
+    border:1.5px solid #E7EAEF;
+    border-radius:12px;
+    font-size:16px;
+    font-family:inherit;
+    box-sizing:border-box;
+    margin-bottom:16px;
+  }
+  .step-next{
+    display:block;
+    width:100%;
+    background:var(--navy);
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    padding:15px;
+    border-radius:12px;
+    border:none;
+    cursor:pointer;
+  }
+  .big-opts{display:flex; flex-direction:column; gap:12px;}
+  .big-opts button{
+    width:100%;
+    padding:18px;
+    border-radius:12px;
+    border:1.5px solid #E7EAEF;
+    background:#fff;
+    color:var(--navy);
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    text-align:left;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    transition:all .12s ease;
+  }
+  .big-opts button:active{transform:scale(.98);}
+  .big-opts button.yes:hover{border-color:var(--green); background:#F2FBF6;}
+  .big-opts button.no:hover{border-color:var(--red); background:#FDF2F3;}
+
+  .final-icon{font-size:44px; text-align:center; margin-bottom:6px;}
+  .final-title{font-size:20px; font-weight:800; color:var(--navy); text-align:center; margin:0 0 10px;}
+  .final-text{font-size:14.5px; color:var(--muted); text-align:center; line-height:1.5; margin:0 0 22px;}
+</style>
+</head>
+<body>
+
+  <div class="topband">
+    <span class="eyebrow">Convocatoria</span>
+    <h1>¿Tienes lo que se necesita para vender?</h1>
+    <p class="lead">Estamos formando un equipo comercial. Lee bien esta información antes de continuar — te va a tomar 2 minutos.</p>
+  </div>
+
+  <div class="wrap">
+
+    <p class="section-title">¿A quién buscamos?</p>
+    <ul class="profile-list">
+      <li><span class="mark">✓</span> Aquí no importa tu punto de partida — importa hasta dónde quieres llegar</li>
+      <li><span class="mark">✓</span> Buscamos a quien quiera construir algo real, no solo probar suerte un mes</li>
+      <li><span class="mark">✓</span> Aquí tú generas tu propio camino — nosotros te damos las herramientas para lograrlo</li>
+      <li><span class="mark">✓</span> El que le pone constancia todos los días, es el que más rápido ve resultados</li>
+      <li><span class="mark">✓</span> Tu ingreso no tiene techo — aquí literalmente tú decides cuánto quieres ganar</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Así funciona:</strong> tu ingreso es 100% comisión, sin límite. Te formamos desde cero — mientras más vendes, más ganas, no hay techo.
+    </div>
+
+    <p class="section-title">Sobre la empresa y el proyecto</p>
+    <div class="company-grid">
+      <div class="company-card">
+        <h3>Quiénes somos</h3>
+        <p>Representamos comercialmente Costa Dorada, un proyecto de lotización respaldado por Casa Dorada, constructora con certificación ISO 9001.</p>
+      </div>
+      <div class="company-card">
+        <h3>Proyecto activo: Costa Dorada</h3>
+        <p>Lotización a solo 3 minutos del mar en La Yarada–Los Palos (Tacna), con habilitación urbana aprobada y red propia de desagüe. Lotes desde 160 m², con financiamiento hasta en 36 cuotas sin intereses.</p>
+      </div>
+      <div class="company-card">
+        <h3>Qué te damos</h3>
+        <p>Capacitación desde el primer día, acompañamiento en tus primeras ventas y respaldo de marca.</p>
+      </div>
+    </div>
+
+    <p class="section-title">Antes de continuar</p>
+    <p class="fineprint" style="margin-top:0; margin-bottom:6px;">Te va a tomar menos de 1 minuto.</p>
+    <div class="start-btn-spacer"></div>
+  </div>
+
+  <button class="start-btn" id="openModal">🚀 Empezar pre-entrevista</button>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">✕</button>
+      <div class="progress-dots" id="progressDots">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="step active" data-step="0">
+        <p class="step-label">Pre-entrevista</p>
+        <p class="step-question">¿Cuál es tu nombre?</p>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+        <button class="step-next" id="nombreNext">Continuar</button>
+      </div>
+
+      <div class="step" data-step="1">
+        <p class="step-label">Pregunta 1 de 4</p>
+        <p class="step-question">Acá no manejamos sueldo fijo — todo es por comisión, sin límite de cuánto puedes ganar. ¿Te sientes cómodo trabajando así?</p>
+        <div class="big-opts">
+          <button class="yes" data-q="q1" data-v="si">Sí <span>→</span></button>
+          <button class="no" data-q="q1" data-v="no">No <span>→</span></button>
+        </div>
+      </div>
+
+      <div class="step" data-step="2">
+        <p class="step-label">Pregunta 2 de 4</p>
+        <p class="step-question">¿Podrías empezar de inmediato si te seleccionamos?</p>
+        <div class="big-opts">
+          <button class="yes" data-q="q2" data-v="si">Sí <span>→</span></button>
+          <button class="no" data-q="q2" data-v="no">No <span>→</span></button>
+        </div>
+      </div>
+
+      <div class="step" data-step="3">
+        <p class="step-label">Pregunta 3 de 4</p>
+        <p class="step-question">¿Estás buscando algo para quedarte y crecer, no solo una experiencia de corto plazo?</p>
+        <div class="big-opts">
+          <button class="yes" data-q="q3" data-v="si">Sí <span>→</span></button>
+          <button class="no" data-q="q3" data-v="no">No <span>→</span></button>
+        </div>
+      </div>
+
+      <div class="step" data-step="4">
+        <p class="step-label">Pregunta 4 de 4</p>
+        <p class="step-question">¿Puedes dedicarle tiempo consistente todos los días, como tu actividad principal?</p>
+        <div class="big-opts">
+          <button class="yes" data-q="q4" data-v="si">Sí <span>→</span></button>
+          <button class="no" data-q="q4" data-v="no">No <span>→</span></button>
+        </div>
+      </div>
+
+      <div class="step" data-step="5">
+        <div id="finalPositive" style="display:none;">
+          <div class="final-icon">✅</div>
+          <p class="final-title">¡Encajas con lo que buscamos!</p>
+          <p class="final-text">Dale clic abajo para coordinar tu entrevista por WhatsApp.</p>
+          <a class="cta enabled" id="ctaBtn" href="#" target="_blank" rel="noopener" style="margin-top:0;">Continuar al WhatsApp →</a>
+        </div>
+        <div id="finalNegative" style="display:none;">
+          <div class="final-icon">🤝</div>
+          <p class="final-title">Gracias por tu honestidad</p>
+          <p class="final-text">Por el perfil que buscamos ahora mismo, esta oportunidad podría no encajar contigo en este momento — pero puedes escribirnos igual si quieres conversarlo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const overlay = document.getElementById('modalOverlay');
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+    const steps = document.querySelectorAll('.step');
+    const dots = document.querySelectorAll('#progressDots span');
+    const nombreInput = document.getElementById('nombre');
+    const nombreNext = document.getElementById('nombreNext');
+    const cta = document.getElementById('ctaBtn');
+    const finalPositive = document.getElementById('finalPositive');
+    const finalNegative = document.getElementById('finalNegative');
+
+    let answers = {};
+    let nombre = '';
+
+    function goToStep(n){
+      steps.forEach(s => s.classList.toggle('active', Number(s.dataset.step) === n));
+      dots.forEach((d,i) => d.classList.toggle('done', i < n));
+    }
+
+    openBtn.addEventListener('click', () => {
+      answers = {};
+      nombre = '';
+      nombreInput.value = '';
+      overlay.classList.add('show');
+      goToStep(0);
+    });
+    closeBtn.addEventListener('click', () => overlay.classList.remove('show'));
+    overlay.addEventListener('click', (e) => { if(e.target === overlay) overlay.classList.remove('show'); });
+
+    nombreNext.addEventListener('click', () => {
+      const val = nombreInput.value.trim();
+      if(!val) { nombreInput.focus(); return; }
+      nombre = val;
+      goToStep(1);
+    });
+    nombreInput.addEventListener('keydown', (e) => { if(e.key === 'Enter') nombreNext.click(); });
+
+    document.querySelectorAll('.big-opts button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const q = btn.dataset.q;
+        const v = btn.dataset.v;
+        answers[q] = v;
+        const currentStep = Number(btn.closest('.step').dataset.step);
+        if(currentStep < 4){
+          goToStep(currentStep + 1);
+        } else {
+          finishQuiz();
+        }
+      });
+    });
+
+    function finishQuiz(){
+      goToStep(5);
+      const allYes = ['q1','q2','q3','q4'].every(q => answers[q] === 'si');
+      if(allYes){
+        finalPositive.style.display = 'block';
+        finalNegative.style.display = 'none';
+        const msg = `Hola, soy ${nombre}. Ya vi toda la información y estoy listo/a para la entrevista presencial. 🚀`;
+        cta.href = `https://wa.me/51952956002?text=${encodeURIComponent(msg)}`;
+        launchConfetti();
+      } else {
+        finalPositive.style.display = 'none';
+        finalNegative.style.display = 'block';
+      }
+    }
+
+    function launchConfetti(){
+      const colors = ['#E63946', '#0B2545', '#1E8E5A', '#FFC93C', '#ffffff'];
+      const container = document.createElement('div');
+      container.style.position = 'fixed';
+      container.style.left = '0';
+      container.style.top = '0';
+      container.style.width = '100%';
+      container.style.height = '100%';
+      container.style.pointerEvents = 'none';
+      container.style.zIndex = '9999';
+      container.style.overflow = 'hidden';
+      document.body.appendChild(container);
+
+      const count = 90;
+      for(let i = 0; i < count; i++){
+        const piece = document.createElement('div');
+        const size = 6 + Math.random() * 6;
+        piece.style.position = 'absolute';
+        piece.style.left = (45 + Math.random() * 10) + '%';
+        piece.style.top = '45%';
+        piece.style.width = size + 'px';
+        piece.style.height = (size * 0.4) + 'px';
+        piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+        piece.style.opacity = '0.95';
+        piece.style.borderRadius = '2px';
+        const angle = Math.random() * Math.PI * 2;
+        const distance = 120 + Math.random() * 220;
+        const dx = Math.cos(angle) * distance;
+        const dy = -Math.abs(Math.sin(angle) * distance) - 80 - Math.random() * 120;
+        const rotate = (Math.random() * 720 - 360) + 'deg';
+        piece.animate([
+          { transform: 'translate(0,0) rotate(0deg)', opacity: 1 },
+          { transform: `translate(${dx}px, ${dy}px) rotate(${rotate})`, opacity: 1, offset: 0.55 },
+          { transform: `translate(${dx * 1.15}px, ${dy + 260}px) rotate(${rotate})`, opacity: 0 }
+        ], {
+          duration: 1300 + Math.random() * 700,
+          easing: 'cubic-bezier(.25,.7,.4,1)'
+        });
+        container.appendChild(piece);
+      }
+      setTimeout(() => container.remove(), 2200);
+    }
+  </script>
+
+</body>
+</html>
